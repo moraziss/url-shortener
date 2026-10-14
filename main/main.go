@@ -16,9 +16,9 @@ func main() {
 	mapHandler := urlshort.MapHandler(pathsToUrls, mux)
 
 	yaml := `
- — 	path: /urlshort
+- path: /urlshort
   url: https://github.com/moraziss/url-shortener
- — 	path: /urlshort-final
+- path: /urlshort-final
   url: https://github.com/moraziss/url-shortener/tree/final
 `
 	yamlHandler, err := urlshort.YAMLHandler([]byte(yaml), mapHandler)
